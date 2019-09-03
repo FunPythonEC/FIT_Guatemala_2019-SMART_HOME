@@ -1,12 +1,11 @@
 from umqtt.robust import MQTTClient
 import time
 
-MQTT_CLIENT_ID = "basicPubSub"
+MQTT_CLIENT_ID = "ESP_LoRa"
 MQTT_PORT = 1883
-MQTT_TOPIC = ""
+MQTT_TOPIC = "prueba/esp32lora"
 MQTT_HOST = "fit2019.ejambre.ec"
-WIFI_SSID = ""
-WIFI_PW = ""
+
 
 mqtt_client = None
 def cb(topic, msg):
@@ -42,21 +41,25 @@ def connect_mqtt():
     print('MQTT conectado')    
 
         
+import network
 
+ssid = 'J-PC'
+password = 'JP.12345'
+
+station = network.WLAN(network.STA_IF)
+station.active(True)
         
-    except Exception as e:
-        print('No se puede conectar MQTT: ' + str(e))
-        raise
 
 while True:
     #start execution
     try:
         print("Conectando a WIFI")
-        #connect_wifi(WIFI_SSID, WIFI_PW)
+        station.connect(ssid, password)
+        
         print("Conectando MQTT")
         connect_mqtt()
         print("Publicando")
-        pub_msg("{\"SMART_HOME-32\":" + str(time.time()) + "}")
+        pub_msg("{\"SALUDOS\":" + str(time.time()) + "}")
         print("OK")
         sub_msg()
         time.sleep(10)
