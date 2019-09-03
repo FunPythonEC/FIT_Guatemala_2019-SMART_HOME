@@ -1,4 +1,4 @@
-# SMART BADGE
+# SMART HOME
 
 <p align="center">
   <img width="800" height="565" src="/imagenes/SmartHomes.jpg">
