@@ -1,7 +1,7 @@
 # SMART BADGE
 
 <p align="center">
-  <img width="640" height="480" src="/imagenes/SmartHomes.jpg">
+  <img width="640" height="640rc="/imagenes/SmartHomes.jpg">
 </p>
 
 ## DISPOSITIVOS
