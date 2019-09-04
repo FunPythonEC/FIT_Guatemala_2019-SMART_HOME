@@ -1,9 +1,9 @@
 from umqtt.robust import MQTTClient
 import time
 
-MQTT_CLIENT_ID = "ESP_LoRa"
+MQTT_CLIENT_ID = "ESP32"
 MQTT_PORT = 1883
-MQTT_TOPIC = "prueba/esp32lora"
+MQTT_TOPIC = "prueba/esp32"
 MQTT_HOST = "fit2019.ejambre.ec"
 
 
@@ -43,8 +43,8 @@ def connect_mqtt():
         
 import network
 
-ssid = 'J-PC'
-password = 'JP.12345'
+ssid = 'IoT 2.4Ghz'
+password = ''
 
 station = network.WLAN(network.STA_IF)
 station.active(True)
@@ -59,7 +59,7 @@ while True:
         print("Conectando MQTT")
         connect_mqtt()
         print("Publicando")
-        pub_msg("{\"SALUDOS\":" + str(time.time()) + "}")
+        pub_msg("{\"SALUDOS-FIT\":" + str(time.time()) + "}")
         print("OK")
         sub_msg()
         time.sleep(10)
