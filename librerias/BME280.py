@@ -2,7 +2,7 @@ from machine import I2C
 import time
 
 # BME280 default address.
-BME280_I2CADDR = 0x76
+BME280_I2CADDR = 0x77
 
 # Operating Modes
 BME280_OSAMPLE_1 = 1
