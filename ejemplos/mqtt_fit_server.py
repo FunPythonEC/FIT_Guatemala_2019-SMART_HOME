@@ -2,11 +2,11 @@ from umqtt.robust import MQTTClient
 import time
 
 
-MQTT_CLIENT_ID = "ESP8266"
+MQTT_CLIENT_ID = "ESP32"
 MQTT_PORT = 1884
 MQTT_TOPIC = "t/Prueba_uPy"
 MQTT_HOST = "fit2019.enjambre.ec"
-WIFI_SSID = "galilleo"
+WIFI_SSID = "galielo"
 WIFI_PW = ""
 
 mqtt_client = None

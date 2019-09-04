@@ -2,8 +2,8 @@ from machine import Pin
 import network
 import time
 
-ssid = 'J-PC'
-password = 'JP.12345'
+ssid = 'galileo'
+password = ''
 
 station = network.WLAN(network.STA_IF)
 station.active(True)

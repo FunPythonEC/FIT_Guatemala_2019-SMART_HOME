@@ -149,9 +149,9 @@ mqtt_client_id = bytes('esp_32', 'utf-8')
 #    Advertencia: una conexión segura usa aproximadamente 9k bytes de la pila
 #          (aproximadamente 1/4 de la pila de micropython en la plataforma ESP8266)
 ADAFRUIT_IO_URL = b'io.adafruit.com' 
-ADAFRUIT_USERNAME = b'jhon_p16'
-ADAFRUIT_IO_KEY = b'50f55bdf3ee849bbad1c564d1136da97'
-ADAFRUIT_IO_FEEDNAME = b'led_strip'
+ADAFRUIT_USERNAME = b''
+ADAFRUIT_IO_KEY = b''
+ADAFRUIT_IO_FEEDNAME = b''
 
 client = MQTTClient(client_id=mqtt_client_id, 
                     server=ADAFRUIT_IO_URL, 
@@ -188,6 +188,3 @@ while True:
         print('Ctrl-C pressed...exiting')
         client.disconnect()
         sys.exit()
-
-
-
