@@ -65,20 +65,14 @@ class MMA8452(object):
 
 
     # metodos para cada eje
-    def get_x(self):
-        ret=self.i2c.readfrom_mem(self.address,OUT_X_MSB,2)
+    def get_acc(self):
+        ret=self.i2c.readfrom_mem(self.address,OUT_X_MSB,6)
         time.sleep_ms(10)
-        return list(ret)
-
-    def get_y(self):
-        ret=self.i2c.readfrom_mem(self.address,OUT_Y_MSB,2)
-        time.sleep_ms(10)
-        return list(ret)
-
-    def get_z(self):
-        ret=self.i2c.readfrom_mem(self.address,OUT_Z_MSB,2)
-        time.sleep_ms(10)
-        return list(ret)
+        ret=list(ret)
+        x=(ret[0]<<8 | ret[1]) >> 4
+        y=(ret[2]<<8 | ret[3]) >> 4
+        z=(ret[4]<<8 | ret[5]) >> 4
+        return [x,y,z]
 
     # estado activo de acelerometro
     def active(self, status):
