@@ -13,7 +13,7 @@ SCL 22 | SCK 4
 SDA 23 | SDI 3
 
 ### Acelerometro/Giroscopio - I2C
-ESP32 | MMA8425QT
+ESP32 | MMA8452QT
 --- | ---
 SCL 22 | SCL 4
 SDA 23 | SDA 6
