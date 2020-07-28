@@ -1,9 +1,9 @@
 # SMART HOME
 
 
-
+![]()
 <p align="center">
-  <src="https://raw.githubusercontent.com/FunPythonEC/ConectateGT/master/media/arcoriiris.jpeg
+  <img img width="800" src="https://raw.githubusercontent.com/FunPythonEC/ConectateGT/master/media/arcoriiris.jpeg
 ">
 </p>
 
