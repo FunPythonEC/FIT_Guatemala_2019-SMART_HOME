@@ -1,11 +1,7 @@
 # SMART HOME
 
 
-![]()
-<p align="center">
-  <img img width="800" src="https://raw.githubusercontent.com/FunPythonEC/ConectateGT/master/media/arcoriiris.jpeg
-">
-</p>
+![tarjetas_fit2019](https://raw.githubusercontent.com/FunPythonEC/ConectateGT/master/media/arcoriiris.jpeg)
 
 <p align="center">
   <img width="800" height="565" src="/imagenes/SmartHomes.jpg">
