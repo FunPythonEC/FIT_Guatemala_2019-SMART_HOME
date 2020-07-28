@@ -1,5 +1,12 @@
 # SMART HOME
 
+
+
+<p align="center">
+  <src="https://raw.githubusercontent.com/FunPythonEC/ConectateGT/master/media/arcoriiris.jpeg
+">
+</p>
+
 <p align="center">
   <img width="800" height="565" src="/imagenes/SmartHomes.jpg">
 </p>
